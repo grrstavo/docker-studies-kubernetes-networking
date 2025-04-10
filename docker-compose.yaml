@@ -14,5 +14,7 @@ services:
     ports: 
       - "8000:8000"
     environment:
+      AUTH_ADDRESS: auth
       TASKS_FOLDER: tasks
-    
+    volumes:
+      - /app/tasks
